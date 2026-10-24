@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <!-- General Messages -->
+    <data name="UnExpectedError" xml:space="preserve">
+        <value>Something went wrong. Please try again later.</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>User not found. Please check your details and try again.</value>
+    </data>
+    
+    <!-- Login Messages -->
+    <data name="LoginSuccess" xml:space="preserve">
+        <value>User signed in successfully.</value>
+    </data>
+    <data name="LoginFail" xml:space="preserve">
+        <value>Invalid username/email or password. Please try again.</value>
+    </data>
+    <data name="UserLocked" xml:space="preserve">
+        <value>Your account has been locked. Please try again later.</value>
+    </data>
+    
+    <!-- Signup Messages -->
+    <data name="SignupSuccess" xml:space="preserve">
+        <value>User signed up successfully.</value>
+    </data>
+    <data name="InvalidDateOfBirth" xml:space="preserve">
+        <value>The provided date of birth is invalid. Please provide a valid date.</value>
+    </data>
+    <data name="InvalidPassword" xml:space="preserve">
+        <value>The provided password does not meet the required criteria. Please try again.</value>
+    </data>
+    <data name="InvalidEmail" xml:space="preserve">
+        <value>The provided email address is invalid. Please provide a valid email.</value>
+    </data>
+    <data name="InvalidUsername" xml:space="preserve">
+        <value>The provided username is invalid. Please provide a valid username.</value>
+    </data>
+    <data name="InvalidFirstname" xml:space="preserve">
+        <value>The first name cannot be empty or invalid. Please provide a valid first name.</value>
+    </data>
+    <data name="InvalidLastname" xml:space="preserve">
+        <value>The last name cannot be empty or invalid. Please provide a valid last name.</value>
+    </data>
+    <data name="UserAlreadyExists" xml:space="preserve">
+        <value>A user with this email or username already exists. Please try another one.</value>
+    </data>
+
+    <!-- ForgetPassword Messages -->
+    <data name="EmailSent" xml:space="preserve">
+        <value>Email has been sent successfully.</value>
+    </data>
+
+    <!-- ResetPassword Messages -->
+    <data name="PasswordResetSuccess" xml:space="preserve">
+        <value>Password has been reset successfully.</value>
+    </data>
+    
+    <data name="TokenExpired" xml:space="preserve">
+        <value>The reset token has expired. Please request a new one.</value>
+    </data>
+    
+    <!-- Follow Messages -->
+    <data name="FollowSuccess" xml:space="preserve">
+        <value>Followed successfully.</value>
+    </data>
+    <data name="FollowAlreadyExist" xml:space="preserve">
+        <value>Follow already exists. Please try again.</value>
+    </data>
+    
+    <!-- Unfollow Messages -->
+    <data name="UnfollowSuccess" xml:space="preserve">
+        <value>Unfollowed successfully.</value>
+    </data>
+    <data name="FollowNotFound" xml:space="preserve">
+        <value>Follow not found. Please try again.</value>
+    </data>
+    
+    <!-- GetFollowers Messages -->
+    <data name="GetFollowersSuccess" xml:space="preserve">
+        <value>Followers fetched successfully.</value>
+    </data>
+    
+    <!-- GetFollowing Messages -->
+    <data name="GetFollowingsSuccess" xml:space="preserve">
+        <value>Following fetched successfully.</value>
+    </data>
+    <data name="FollowYourself" xml:space="preserve">
+        <value>You cannot follow yourself</value>
+    </data>
+    <data name="UnfollowYourself" xml:space="preserve">
+        <value>You cannot unfollow yourself.</value>
+    </data>
+</root>

@@ -1,0 +1,74 @@
+.page {
+    background: url(assets/login-page/logo-main-background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+    min-height: 680px;
+    overflow-y: auto;
+}
+
+.pageImg {
+    width: 630px;
+    height: 450px;
+    filter: brightness(0.7) contrast(150%);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .pageImg {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pageImg {
+        width: 300px;
+        height: 280px;
+    }
+}
+
+.pageText {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 900;
+}
+
+@media (max-width: 576px) {
+    .pageText {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+.pageLink {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(217, 217, 217, 1);
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 40px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.pageLink:hover {
+    background-color: #BF9C22;
+}
+
+.pageLinkIcon {
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    top: 30%;
+}

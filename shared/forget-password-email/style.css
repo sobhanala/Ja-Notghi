@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Doran';
+    src: url('./assets/font/Doran-Bold.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Doran', sans-serif;
+    direction: rtl;
+}
+
+body {
+    background-color: #E1E1E1;
+    overflow-y: auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 21px 0 21px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.banner {
+    margin-bottom: 12px;
+}
+
+.banner-tag {
+    color: #1E1E1E;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 53.34px;
+}
+
+@media (max-width: 992px) {
+    .banner-tag {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-tag {
+        font-size: 24px;
+    }
+}
+
+.main-content-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 84.3%;
+    max-width: 800px;
+    height: 360px;
+    background-color: #10A27B80;
+    padding: 43px 84px 33px 83px;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .main-content-card {
+        padding: 43px 44px 33px 43px;
+    }
+}
+
+.main-content-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 32px;
+    border: 3px solid transparent;
+    background: linear-gradient(140deg, rgba(153, 153, 153, 0), rgba(255, 255, 255, 0.24), rgba(77, 55, 55, 1)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.card-header {
+    color: #191919;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26.67px;
+}
+
+@media (max-width: 576px) {
+    .card-header {
+        font-size: 14px;
+    }
+}
+
+.card-button {
+    width: 87%;
+    max-width: 300px;
+    height: 72px;   
+    background-color: #4A605A;
+    border: 1px solid var(--Border-Danger-Secondary, #C00F0C);
+    border-radius: 6px;
+}
+
+.card-button-text {
+    color: #FEE9E7;
+    font-weight: 800;
+    line-height: 20px;
+    font-size: Large;
+}
+
+.card-footer {
+    color: #00000063;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@media (max-width: 576px) {
+    .card-footer {
+        font-size: 10px;
+    }
+}
+
+.footer-container {
+    padding: 20px 0;
+    text-align: center;
+}

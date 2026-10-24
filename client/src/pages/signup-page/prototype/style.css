@@ -1,0 +1,216 @@
+* {
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+body {
+    background: url(./assets/logo-main-background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 680px;
+    overflow-y: auto;
+}
+
+.back-layer {
+    width: 992px;
+    height: 80%;
+    max-height: 856px;
+    min-height: 650px;
+
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.19);
+    background-image: linear-gradient(135deg, rgba(184, 184, 184, 0.305), rgba(255, 255, 255, 1));
+    border-radius: 79px;
+}
+
+@media (max-width: 992px) {
+    .back-layer {
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-layer {
+        width: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .back-layer {
+        width: 300px;
+    }
+}
+
+.signup-container {
+    width: 100%;
+    height: 100%;
+
+    background: url(./assets/secondry-background.png);
+    background-size: 115% 115%;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 79px; 
+    box-shadow: 6px 9px 5.7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signupLogo {
+    height: 140px;
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .signupLogo {
+        scale: 75%;
+    }
+}
+
+.imgLogo {
+    margin-top: 35px;
+    height: 80%;
+}
+
+.formContainer {
+    width: 69%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+
+.formInputColumn {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input-group {
+    width: 100%;
+    height: 15%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    .text-input-group {
+        margin-bottom: 15px;
+    }
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .input-label {
+        display: none;
+    }
+}
+
+.text-input {
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+.text-input[placeholder] { text-overflow: ellipsis; }
+
+.eng-text-input {
+    direction: ltr;
+}
+
+.text-input::placeholder {
+    color: #B3B3B3;
+}
+
+select.text-input {
+    padding: 0;
+}
+
+@media (max-width: 576px) {
+    .text-input::placeholder {
+        font-size: 12px;
+    }
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.form-btn {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.form-btn:hover {
+    background-color: #555;
+}
+
+.already-have-account-button {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-right: 5%;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (max-width: 576px) {
+    .already-have-account-button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .already-have-account-button {
+        margin-top: 10px;
+    }
+}
+
+.already-have-account-button:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .footer-img {
+        scale: 80%;
+    }
+}

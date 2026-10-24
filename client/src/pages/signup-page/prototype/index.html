@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back-layer">
+        <div class="signup-container">
+            <div class="signupLogo">
+                <img class="imgLogo" src="./assets/sign-up-header-logo.svg" alt="signup-logo">
+            </div>
+            <div class="formContainer">
+                <form class="signup-form" action="">
+                    <div class="formInputColumn">
+                        <div class="text-input-group">
+                            <label class="input-label" for="firstname">نام</label>
+                            <input class="text-input" type="text" id="firstname" placeholder="نام">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="lastname">نام خانوادگی</label>
+                            <input class="text-input" type="text" id="lastname" placeholder="نام خانوادگی">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="date">تاریخ تولد</label>
+                            <input class="text-input" type="date" id="date" placeholder="date of birth">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="gender">جنسیت</label>
+                            <select class="text-input" id="gender">
+                                <option value="" disabled selected>جنسیت</option>
+                                <option value="male">مرد</option>
+                                <option value="female">زن</option>
+                                <option value="other">دیگر</option>
+                                <option value="prefer_not_to_say">علاقه مند به گفتن نیست</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formInputColumn">
+                        <div class="text-input-group">
+                            <label class="input-label" for="email">ایمیل</label>
+                            <input class="text-input eng-text-input" type="email" id="email" placeholder="username@example.com">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="username">نام کاربری</label>
+                            <input class="text-input eng-text-input" type="text" id="username" placeholder="username">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="password">رمز ورود</label>
+                            <input class="text-input eng-text-input" type="password" id="password" placeholder="password">
+                        </div>
+                        <div class="text-input-group">
+                            <label class="input-label" for="confirm-password">تکرار رمز ورود</label>
+                            <input class="text-input eng-text-input" type="password" id="confirm-password" placeholder="confirm password">
+                        </div>
+                    </div>
+                    <input class="form-btn" type="submit" value="ثبت نام">
+                    <a class="already-have-account-button" href="#">اکانت دارید؟ از اینجا وارد شوید.</a>
+                </form>
+            </div>
+            <div class="footer-img">
+                <img src="./assets/footer-logo.svg" alt="footer-logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

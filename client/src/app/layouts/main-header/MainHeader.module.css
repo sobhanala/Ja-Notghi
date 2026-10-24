@@ -1,0 +1,90 @@
+.headerContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .headerContainer {
+        justify-content: space-between;
+    }
+}
+
+.contentNameText {
+    font-size: large;
+    font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+    .contentNameText {
+        display: none;
+    }
+}
+
+.menuIcon {
+    display: none;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .menuIcon {
+        display: block;
+    }
+}
+
+.textLogo {
+    display: none;
+    width: 120px;
+    height: 55px; 
+}
+
+@media (max-width: 768px) {
+    .textLogo {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .textLogo {
+        width: 85px;
+        height: 40px;
+    }
+}
+
+.userProfileImage {
+    width: 45px;
+    height: 45px;
+}
+
+@media (max-width: 768px) {
+    .userProfileImage {
+        position: absolute;
+        left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .userProfileImage {
+        position: relative;
+        left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .userProfileImage {
+        width: 35px;
+        height: 35px;
+    }
+}

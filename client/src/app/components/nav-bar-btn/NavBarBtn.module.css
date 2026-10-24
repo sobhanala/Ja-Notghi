@@ -1,0 +1,63 @@
+.navBarBtn {
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease, width 0.3s ease; 
+}
+
+.navBarBtn:hover {
+    background-color: rgba(183, 168, 168, 1);
+}
+
+.navBarBtn:focus {
+    background-color: rgba(255, 71, 71, 1);
+    width: 120%;
+}
+
+@media (max-width: 992px) {
+    .navBarBtn:focus {
+        width: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBarBtn {
+        padding: 10px;
+    }
+
+    .navBarBtn:focus {
+        width: auto;
+    }
+}
+
+
+.navBarBtnText {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navBarBtnText {
+        display: none;
+    }
+}
+
+.navBarBtnIcon {
+    position: absolute;
+    right: 10px;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    .navBarBtnIcon {
+        position: relative;
+        right: 0;
+    }
+}

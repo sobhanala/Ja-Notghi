@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Doran';
+    src: url('./assets/font/Doran/Doran-Bold.ttf') format('truetype');
+    font-weight: bold; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Doran';
+    src: url('./assets/font/Doran/Doran-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: 'Doran';
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}   
+
+.page {
+    background: url(./assets/background.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+}
+
+@media (min-width: 576px) {
+    .page {
+        min-height: 600px;
+    }
+}
+
+.partition {
+    padding: 10px;
+}
+
+.rightPartition {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(246, 241, 241, 1);
+}
+
+@media (max-width: 576px) {
+    .rightPartition {
+        display: none;
+    }
+}
+
+.upperRight {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.logoContainer {
+    width: 150px;
+    height: 70px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 170px;
+    width: 45%;
+    margin-top: 60px;
+}
+
+.menuItem {
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s ease, width 0.3s ease;
+
+    /* these styles should not be in component */
+    width: 100%;
+    margin-top: 40px; 
+}
+
+.menuItem:hover {
+    background-color: rgba(183, 168, 168, 1);
+}
+
+.menuItem:focus {
+    background-color: rgba(255, 71, 71, 1);
+    width: 120%;
+}
+
+.menuItemText {
+    color: black;
+}
+
+.menuIcon {
+    position: absolute;
+    right: 10px;
+    font-size: large;
+}
+
+.contactContainer {
+    margin: 20px 0;
+}
+
+.contactIcon {
+    font-size: x-large;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.middlePartition {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+@media (max-width: 576px) {
+    .middlePartition {
+    width: 100%;
+    }
+}
+
+.mainHeader {
+   height: 75px;
+   background-color: rgba(217, 217, 217, 1);
+   padding: 20px;
+   display: flex;               
+   justify-content: flex-start;
+   align-items: center; 
+}
+
+@media (max-width: 576px) {
+    .bigMainHeader {
+        display: none;
+    }
+}
+
+.bigMainHeaderText {
+    margin-right: 50px;
+}
+
+.smallMainHeader {
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+    .smallMainHeader {
+        display: none;
+    }
+}
+
+.smallHeaderMenuIcon {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.smallLogoContainer {
+    width: 85px;
+    height: 40px;
+}
+
+.profileImageContainer {
+    border-radius: 50%;
+    color: white;
+    font-size: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.userHeaderImage {
+    width: 36px;
+    height: 36px;
+}
+
+.postsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 30px;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+.postsContainer::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+.post {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding: 15px 10px;
+    
+    /* these styles should not be in component */
+    width: 100%;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.postHeaderImage {
+    width: 32px;
+    height: 32px;
+    background-color: red;
+}
+
+.postHeaderTag {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.postHeaderEllipsis {
+    color: rgba(65, 64, 64, 1);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.postContent {
+    margin-right: 70px;
+    margin-left: 100px;
+    font-size: 11px;
+}
+
+@media (max-width: 992px) {
+    .postContent {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .postContent {
+        margin-left: 30px;
+    }
+}
+
+.postFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.postFooterIcon {
+    font-size: small;
+    cursor: pointer;
+}
+
+.leftPartition {
+    width: 30%;
+    background-color: rgba(246, 241, 241, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .leftPartition {
+        display: none;
+    }
+}
+
+.serchBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 15px;
+    font-size: small;
+    border-radius: 28px;
+    background-color: rgba(236, 230, 240, 1);
+    color: rgba(73, 69, 79, 1);
+    width: 80%;
+    height: 45px;
+    min-width: 160px;
+    max-width: 620px;
+}
+
+.searchBoxInput {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    width: 90%;
+}
+
+.searchBoxIcon {
+    cursor: pointer;
+}
+
+.copyrightsLogo {
+    width: 250px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+@media (max-width: 992px) {
+    .copyrightsLogo {
+        width: 180px;
+        height: 80px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .copyrightsLogo {
+        width: 160px;
+        margin-right: 10px;
+    }
+}

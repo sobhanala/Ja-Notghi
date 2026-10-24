@@ -1,0 +1,104 @@
+.loginForm {
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textInputGroup {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputLabel {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    font-size: 16px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .inputLabel {
+        display: none;
+    }
+}
+
+.textInput {
+    direction: ltr;
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+}
+
+.textInput::placeholder {
+    text-align: right;
+}
+
+@media (max-width: 576px) {
+    .textInput {
+        font-size: 13px;
+    }
+}
+
+.textInput:focus {
+    outline: none;
+}
+
+.formBtn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.enableFormBtn {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.enableFormBtn:hover {
+    background-color: #555;
+}
+
+.disableFormBtn {
+    background-color: #999;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media (max-width: 576px) {
+    .formBtn {
+        font-size: 13px;
+    }
+}
+
+.forgotPassword {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (max-width: 576px) {
+    .forgotPassword {
+        font-size: 13px;
+    }
+}
+
+.forgotPassword:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Doran';
+    src: url('%PUBLIC_URL%/assets/font/Doran/Doran-Bold.ttf') format('truetype');
+    font-weight: bold; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Doran';
+    src: url('%PUBLIC_URL%/assets/font/Doran/Doran-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
